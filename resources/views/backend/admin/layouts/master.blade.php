@@ -47,6 +47,7 @@
         @include('backend.admin.includes.sidebar')
             @yield('content')
             @include('backend.admin.includes.control-sidebar')
+            @include('backend.admin.includes.footer')
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
@@ -105,5 +106,8 @@
 
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('assets/dist/js/demo.js') }}"></script>
+
+
+    @stack('scripts')
   </body>
 </html>

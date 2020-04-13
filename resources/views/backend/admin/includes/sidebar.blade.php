@@ -21,7 +21,11 @@
           </a>
        
           <ul class="treeview-menu">
-              <li class="active"><a href="{{ route('admin.categories') }}"><i class="fa fa-circle-o"></i> Categories</a></li>
+              <li class="active"><a href="{{ route('admin.main_category') }}"><i class="fa fa-circle-o"></i> Categories</a></li>
+
+              <li class="active"><a href="{{ route('admin.sub_category') }}"><i class="fa fa-circle-o"></i>Sub Categories</a></li>
+
+
             <li class="active"><a href="{{ route('admin.orders') }}"><i class="fa fa-circle-o"></i> Orders</a></li>
           </ul>
 

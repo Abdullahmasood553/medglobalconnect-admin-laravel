@@ -21,7 +21,8 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function() {
     Route::get('/login', 'AdminController@login')->name('admin.login');
     Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
-    Route::get('/categories', 'CategoryController@index')->name('admin.categories');
+    Route::get('/categories', 'CategoryController@main_category')->name('admin.main_category');
+    Route::get('/sub_categories', 'CategoryController@sub_category')->name('admin.sub_category');
     Route::get('/orders', 'OrderController@index')->name('admin.orders');
 });
 
