@@ -24,6 +24,8 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('/categories', 'CategoryController@main_category')->name('admin.main_category');
     Route::get('/sub_categories', 'CategoryController@sub_category')->name('admin.sub_category');
     Route::get('/orders', 'OrderController@index')->name('admin.orders');
+    Route::post('/orders', 'OrderController@save_order');
+    
 });
 
 
